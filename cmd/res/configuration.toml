@@ -1,5 +1,5 @@
 [Service]
-Host = "localhost"
+Host = "192.168.100.180"
 Port = 49988
 ConnectRetries = 3
 Labels = []
@@ -10,7 +10,7 @@ EnableAsyncReadings = true
 AsyncBufferSize = 16
 
 [Registry]
-Host = "localhost"
+Host = "192.168.100.180"
 Port = 8500
 CheckInterval = "10s"
 FailLimit = 3
@@ -28,21 +28,21 @@ LogLevel = "INFO"
   [Clients.Data]
   Name = "edgex-core-data"
   Protocol = "http"
-  Host = "localhost"
+  Host = "192.168.100.174"
   Port = 48080
   Timeout = 5000
 
   [Clients.Metadata]
   Name = "edgex-core-metadata"
   Protocol = "http"
-  Host = "localhost"
+  Host = "192.168.100.174"
   Port = 48081
   Timeout = 5000
 
   [Clients.Logging]
   Name = "edgex-support-logging"
   Protocol = "http"
-  Host = "localhost"
+  Host = "192.168.100.174"
   Port = 48061
 
 [Device]
